@@ -16,7 +16,7 @@ class Sample{
 class cmp{
     public:
     cmp(){}
-    bool operator()(const Sample &a,const Sample &b){ // i am comparing w.r.t "y" attribute of object 
+    bool operator()(const Sample &a,const Sample &b) const { // i am comparing w.r.t "y" attribute of object 
         return a.y > b.y;
     }
     
