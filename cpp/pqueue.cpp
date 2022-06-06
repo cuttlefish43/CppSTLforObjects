@@ -17,7 +17,7 @@ class Cmp{
     Cmp(){
 
     }
-    bool operator() (const Sample &a,const Sample &b){
+    bool operator() (const Sample &a,const Sample &b) const {
         if(a.y == b.y){
             return a.x > b.x;
         }else{
